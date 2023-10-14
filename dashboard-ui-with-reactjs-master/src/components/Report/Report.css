@@ -1,0 +1,129 @@
+/* grid c3 */
+.grid-c3 {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+.grid-c3-content {
+  flex: 1;
+}
+.grid-chart {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: space-between;
+  overflow: scroll;
+  height: 100%;
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+.selecting-tag{
+  border: none;
+    
+    background: #e9e8f5;
+    padding-right: 20px;
+    color: #60606b;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.grid-chart::-webkit-scrollbar {
+  display: none;
+}
+
+.chart-vert-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 28px;
+}
+.grid-chart-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top:auto ;
+  margin-bottom: 10px;
+  &:nth-child(1){
+    height: 210px;
+  }
+  &:nth-child(2){
+    height: 150px;
+  }
+  &:nth-child(3){
+    height: 200px;
+  }
+  &:nth-child(4){
+    height: 260px;
+  }
+  &:nth-child(5){
+    height: 100px;
+  }
+  &:nth-child(6){
+    height: 200px;
+  }
+  &:nth-child(7){
+    height: 160px;
+  }
+  &:nth-child(9){
+    height: 160px;
+  }
+  &:nth-child(10){
+    height: 200px;
+  }
+  &:nth-child(11){
+    height: 230px;
+  }
+  &:nth-child(12){
+    height: 160px;
+  }
+}
+.grid-chart-bar .bar-wrapper {
+  margin-top: auto;
+  height: 220px;
+  width: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  background-color: var(--clr-primar-light);
+  position: relative;
+  overflow: hidden;
+}
+.grid-chart-bar .grid-hortz-value {
+  margin-top: 12px;
+  font-weight: 600;
+}
+.grid-chart-bar .bar-item1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--clr-pumpkin);
+  border-radius: 10px;
+}
+.grid-chart-bar .bar-item2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 10px;
+}
+.grid-chart-bar:nth-child(3) .bar-wrapper .bar-item1 {
+  z-index: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .grid-c3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+  }
+}
+
+@media screen and (max-width:1200px){
+  .grid-c3 {
+    width: 100%;
+  }
+}

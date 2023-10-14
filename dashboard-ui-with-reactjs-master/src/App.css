@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #0a0a42;
+  --clr-primar-light: #e9e8f5;
+  --clr-secondary: #f8f5f5;
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-pumpkin: #3c3cec;
+  --clr-silver: #a8a5a6;
+  --clr-silver-v1: #bdbabb;
+  --clr-scarlet: #fe1e00;
+  --clr-scarlet-v1: rgb(254, 30, 0, 0.79);
+  --clr-green: #289f34 ;
+  --clr-yellow: #fec80a;
+  --clr-jet: #302924;
+  --clr-peach: #ffc397;
+  --clr-card1:#289f343b;
+  --font-family-bai: "Bai Jamjuree", sans-serif;
+  --transition-default: all 300ms ease-in-out;
+}
+
+body {
+  font-family: var(--font-family-bai);
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  color: unset;
+  text-decoration: none;
+  color: var(--clr-white);
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.img-fit-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-black {
+  color: var(--clr-black);
+  font-weight: 700;
+  margin: 4px 0px;
+  font-size: 22px;
+}
+.text-small {
+  color: #555252;
+  font-size: 12px;
+}
+.text-white {
+  color: var(--clr-white);
+}
+.text-silver-v1 {
+  color: var(--clr-silver-v1);
+}
+.flex-card{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.text-scarlet {
+  color: var(--clr-scarlet);
+}
+.text-green {
+  color: var(--clr-green);
+  font-weight:700;
+}
+.text-red {
+  color: var(--clr-scarlet);
+  font-weight:700;
+}
+.menu-icon {
+  font-size: 20px;
+}
+.text-sm {
+  font-size: 14px;
+}
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+.earning{
+  color: var(--clr-green) ;
+  font-size: 45px;
+}
+.order{
+  color: rgb(139, 75, 199) ;
+  font-size: 45px;
+}
+.sales{
+  color: rgb(226, 43, 52) ;
+  font-size: 45px;
+}
+.balance{
+  color: #2b87e2 ;
+  font-size: 45px;
+}
+/* commons */
+.lg-value {
+  font-size: 24px;
+  font-weight: 600;
+}
+.grid-common {
+  background-color: var(--clr-white);
+  border-radius: 12px;
+  padding: 24px;
+}
+.grid-c-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.grid-c-title-text {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--clr-silver);
+}
+.grid-c-title-icon img {
+  width: 24px;
+}
+
+@media screen and (max-width: 1400px) {
+  .grid-common {
+    padding: 16px;
+  }
+  body {
+    font-size: 14px !important;
+  }
+}
